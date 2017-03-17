@@ -108,7 +108,7 @@ Part of your `#move` method will mean updating the `board` array passed into it.
 ```ruby
 board = [" ", " ", " "]
 def update_array_at_with(array, index, value)
-  array[index] = value
+   array[index] = value
 end
 
 update_array_at_with(board, 0, "Red")
