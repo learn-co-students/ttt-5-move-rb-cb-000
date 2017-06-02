@@ -2,22 +2,21 @@ require_relative "../lib/move.rb"
 
 describe '#input_to_index' do
 
-  it 'converts a user_input to an integer' do
-    user_input = "1"
+  it 'converts the value to an integer' do
+    value = "2"
 
-    expect(input_to_index(user_input)).to be_a(Integer)
   end
 
-  it 'subtracts 1 from the user_input' do
-    user_input = "6"
+  it 'subtracts 1 from the value' do
+    value = "6"
 
-    expect(input_to_index(user_input)).to be(5)
+    expect(input_to_index(value)).to be(5)
   end
 
   it 'returns -1 for strings without integers' do
-    user_input = "invalid"
+    value = "invalid"
 
-    expect(input_to_index(user_input)).to be(-1)
+    expect(input_to_index(value)).to be(-1)
   end
 
 end
