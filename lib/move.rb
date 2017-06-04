@@ -7,3 +7,11 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+def input_to_index(user_input)
+  intention = user_input.to_i
+  intention - 1
+end
+
+def move(board,intention,character="X")
+  board[intention] = character
+end
