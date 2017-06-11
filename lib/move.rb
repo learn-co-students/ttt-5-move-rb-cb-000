@@ -13,7 +13,7 @@ def input_to_index(input)
 end
 
 #move method
-def move(board, index, token= "X")
+def move(board, index, token = "X")
   board[index] = token
   board
 end
