@@ -7,3 +7,12 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+
+def input_to_index (user_input)
+  user_input.to_i - 1
+end
+
+def move (board, position, player="X")
+  # place player symbol at board[position] --> if player types 3, an X will be placed at board[2]
+  board[position] = player
+end

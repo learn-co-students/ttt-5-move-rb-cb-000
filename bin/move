@@ -3,3 +3,21 @@
 require_relative '../lib/move.rb'
 
 # Code your CLI Here
+
+# start with an empty board array
+board = [" ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+puts "Welcome to Tic Tac Toe!"
+puts "Where would you like to go? Please enter 1-9."
+
+# get user input (1-9)
+input = gets.strip
+
+# convert user input number to an index (0-8) and store as position variable
+position = input_to_index(input)
+
+# call move method & add player symbol to board array at position
+move(board, position)
+
+# display board array, formatted in grid layout
+display_board(board)
