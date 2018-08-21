@@ -7,3 +7,40 @@ def display_board(board)
 end
 
 # code your input_to_index and move method here!
+def input_to_index(temp_char)
+  temp = 0
+  if (temp_char == "1")
+    temp = 1
+  end
+  if (temp_char == "2")
+    temp = 2
+  end
+  if (temp_char == "3")
+    temp = 3
+  end
+  if (temp_char == "4")
+    temp = 4
+  end
+  if (temp_char == "5")
+    temp = 5
+  end
+  if (temp_char == "6")
+    temp = 6
+  end
+  if (temp_char == "7")
+    temp = 7
+  end
+  if (temp_char == "8")
+    temp = 8
+  end
+  if (temp_char == "9")
+    temp = 9
+  end
+  temp_final = temp - 1
+  return temp_final
+end
+
+def move(board, user_pos, user_char = "X")
+  board[user_pos] = user_char
+  display_board(board)
+end
