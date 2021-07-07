@@ -1,3 +1,12 @@
+def input_to_index(strNum)
+  idxNum = strNum.to_i
+  return (idxNum - 1)
+end
+
+def move(board, idxNum, chrVal = "X")
+  board[idxNum] = chrVal
+end
+
 def display_board(board)
   puts " #{board[0]} | #{board[1]} | #{board[2]} "
   puts "-----------"
